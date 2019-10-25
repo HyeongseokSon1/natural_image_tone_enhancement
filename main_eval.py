@@ -70,19 +70,11 @@ def evaluate():
         valid_img = (valid_img / 127.5) - 1   # rescale to ［－1, 1]
         ###======================= EVALUATION =============================###
         start_time = time.time()
-        out= sess.run(net_g.outputs, {t_image: [valid_img]})
-        out_lab = cv2.cvtColor(scale_image(out[0],True).astype(np.float32)/255.,cv2.COLOR_RGB2LAB)
-        in_lab = cv2.cvtColor(in_ori.astype(np.float32)/255.,cv2.COLOR_RGB2LAB)
-        out_l, out_a, out_b = cv2.split(out_lab)
-        in_l, in_a, in_b = cv2.split(in_lab)
-        out_ = cv2.merge((out_l, in_a, in_b))
-        out_ = cv2.cvtColor(out_,cv2.COLOR_Lab2RGB)*255.
-
-            
+        out= sess.run(net_g.outputs, {t_image: [valid_img]})               
         print("took: %4.4fs" % (time.time() - start_time))    
         
         print("[*] save images")
-        scipy.misc.toimage(out_,cmin=0,cmax=255).save(save_dir+'/' + valid_img_list[imid][0:-4] +'.png')
+        scipy.misc.toimage((out[0]+1)/2.*255.,cmin=0,cmax=255).save(save_dir+'/' + valid_img_list[imid][0:-4] +'.png')
         # tl.vis.save_image(out[0], save_dir+'/' + valid_lr_img_list[imid][0:-4] +'.png')    
 
 
