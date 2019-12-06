@@ -1,5 +1,5 @@
 # natural_image_tone_enhancement
-An implementation of <b>"Naturalness-Preserving Image Tone Enhancement Using Adversarial Networks"</b> (presented at Pacific Graphics 2019)
+An implementation of <b>"Naturalness-Preserving Image Tone Enhancement Using Generative Adversarial Networks"</b>
 
 # Introduction
 This project uses GAN (Generative Adversarial Netowrk) for naturalness-preserving image tone enhancement with an automatically generated paired dataset. The paired dataset consists of input images from Five-K dataset[1] and the results of a previous classical filtering method[2] that produces drastic but possibly unnatural-looking tone enhancement results.
@@ -14,7 +14,7 @@ Hyeongseok Son (sonhs@postech.ac.kr)
 
 ## Citation
 Cite our papers if you find this software useful.<br>
-1. Hyeongseok Son, Gunhee Lee, Sunghyun Cho, Seungyong Lee, "[Naturalness-Preserving Image Tone Enhancement Using Adversarial Networks](http://cg.postech.ac.kr/research/natural_tone_enhancement/)", Computer Graphics Form (special issue on Pacific Graphics 2019), Vol. 38, No.7, 2019. 
+1. Hyeongseok Son, Gunhee Lee, Sunghyun Cho, Seungyong Lee, "[Naturalness-Preserving Image Tone Enhancement Using Generative Adversarial Networks](http://cg.postech.ac.kr/research/natural_tone_enhancement/)", Computer Graphics Form (special issue on Pacific Graphics 2019), Vol. 38, No.7, 2019. 
 
 ```
 @article{Son19CGF,
