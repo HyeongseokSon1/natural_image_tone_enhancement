@@ -1,5 +1,5 @@
 # natural_image_tone_enhancement
-An implementation of <b>"Naturalness-Preserving Image Tone Enhancement Using Generative Adversarial Networks"</b>
+An implementation of <b>"Naturalness-Preserving Image Tone Enhancement Using Generative Adversarial Networks"</b>, Pacific Graphics 2019 Best Paper
 
 # Introduction
 This project uses GAN (Generative Adversarial Netowrk) for naturalness-preserving image tone enhancement with an automatically generated paired dataset. The paired dataset consists of input images from Five-K dataset[1] and the results of a previous classical filtering method[2] that produces drastic but possibly unnatural-looking tone enhancement results.
