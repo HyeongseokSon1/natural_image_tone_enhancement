@@ -7,7 +7,7 @@ This project uses GAN (Generative Adversarial Netowrk) for naturalness-preservin
 For more details regarding this technique, please refer to the paper
 
 ## Checkpoint
-For testing our network, please download the pretrained [model](https://drive.google.com/open?id=1oN6501xXOpJHqPZCdkQ52IUcrjuEzYob) and move the model to the "checkpoint" folder.
+For testing our network, please download the pretrained [model](https://drive.google.com/file/d/1pJuRM_xPOXKmcpJgKa889l1gzM5zCVRl/view?usp=sharing) and move the model to the "checkpoint" folder.
 
 ## Contributors
 Hyeongseok Son (sonhs@postech.ac.kr)
